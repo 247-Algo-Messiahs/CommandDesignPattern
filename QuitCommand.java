@@ -6,7 +6,8 @@ public class QuitCommand implements Command {
     
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
+        System.out.println("Hope you had fun. Goodbye!");
+        System.exit(0);
         
     }
     
