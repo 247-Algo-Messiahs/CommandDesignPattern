@@ -12,7 +12,8 @@ public class InputHandler {
     }
 
     public void buttonPressed(String command) {
-
+        Command com = this.commands.get(command);
+        com.execute();
     }
 
 }
