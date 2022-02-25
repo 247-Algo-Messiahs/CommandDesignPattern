@@ -1,9 +1,11 @@
 import java.util.concurrent.TimeUnit;
+import java.io.*;
+import java.util.*;
 
 public class Player {
 
     public Player() {
-        System.out.print("Our her is born");
+        System.out.print("Our hero is born");
     }
 
     public void jump() {
@@ -11,6 +13,12 @@ public class Player {
     }
 
     public void fire() {
+        File fileName = new File("fire.txt");
+        Scanner input = new Scanner("fire.txt");
+        List<String> list = new ArrayList<String>();
+        while (input.hasNextLine()){
+            list.add(input.nextLine());
+        }
 
     }
 
