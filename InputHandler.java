@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class InputHandler {
     
-    private HashMap<String, Command> commands;
+    private HashMap<String, Command> commands = new HashMap<String, Command>();
 
     public InputHandler(Player player) {
         this.commands.put("jump", new JumpCommand(player));
