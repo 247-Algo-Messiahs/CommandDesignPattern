@@ -19,6 +19,11 @@ public class Player {
         while (input.hasNextLine()){
             list.add(input.nextLine());
         }
+        for (int i = 0; i < list.size(); i +=3 ){
+            System.out.println(list.get(i) + "\n" + 
+                               list.get(i+1) + "\n" +
+                               list.get(i+2));
+        }
 
     }
 
