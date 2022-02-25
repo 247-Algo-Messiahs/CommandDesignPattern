@@ -1,7 +1,7 @@
 public class QuitCommand implements Command {
 
-    public QuitCommand(Player player) {
-        
+    public QuitCommand() {
+
     }
     
     @Override
