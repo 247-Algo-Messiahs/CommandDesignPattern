@@ -7,7 +7,6 @@ public class RunCommand implements Command {
     
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
         player.runForward();
     }
     
