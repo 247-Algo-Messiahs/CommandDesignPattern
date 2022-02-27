@@ -19,6 +19,7 @@ public class Player {
             list.add(input.nextLine());
         }
 
+        input.close();
         clear();
 
         for (int i = 0; i < list.size(); i +=6 ){
@@ -42,6 +43,7 @@ public class Player {
             list.add(input.nextLine());
         }
 
+        input.close();
         clear();
 
         for (int i = 0; i < list.size(); i +=3 ){
@@ -62,8 +64,9 @@ public class Player {
             list.add(input.nextLine());
         }
 
+        input.close();
         clear();
-        
+
         for (int i = 0; i < list.size(); i +=3 ){
             System.out.println(list.get(i) + "\n" + 
                                list.get(i+1) + "\n" +
@@ -76,14 +79,6 @@ public class Player {
     private void sleep() {
         try {
             TimeUnit.MILLISECONDS.sleep(100);
-        } catch (Exception e) {
-            System.out.println("Timmer error");
-        }
-    }
-
-    private void sleep(int num) {
-        try {
-            TimeUnit.MILLISECONDS.sleep(num);
         } catch (Exception e) {
             System.out.println("Timmer error");
         }
