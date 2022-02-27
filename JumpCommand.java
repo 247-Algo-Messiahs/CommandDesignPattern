@@ -1,5 +1,8 @@
+import java.io.FileNotFoundException;
+
 public class JumpCommand implements Command {
-        private Player player;
+
+    private Player player;
 
     public JumpCommand(Player player) {
         this.player = player;
@@ -7,7 +10,11 @@ public class JumpCommand implements Command {
     
     @Override
     public void execute() {
-        player.jump();
+        try {
+            player.jump();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         
     }
     

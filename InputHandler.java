@@ -5,6 +5,7 @@ public class InputHandler {
     private HashMap<String, Command> commands = new HashMap<String, Command>();
 
     public InputHandler(Player player) {
+        this.commands = new HashMap<String,Command>();
         this.commands.put("jump", new JumpCommand(player));
         this.commands.put("run", new RunCommand(player));
         this.commands.put("fire", new FireCommand(player));

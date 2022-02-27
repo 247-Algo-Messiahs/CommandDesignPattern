@@ -1,4 +1,7 @@
+import java.io.FileNotFoundException;
+
 public class RunCommand implements Command {
+    
     private Player player;
 
     public RunCommand(Player player) {
@@ -7,7 +10,11 @@ public class RunCommand implements Command {
     
     @Override
     public void execute() {
-        player.runForward();
+        try {
+            player.runForward();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
     
 }
