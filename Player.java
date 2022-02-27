@@ -23,7 +23,7 @@ public class Player {
      * @throws FileNotFoundException
      */
     public void jump() throws FileNotFoundException {
-        File fileName = new File("CommandDesignPattern/jump.txt");
+        File fileName = new File("jump.txt");
         Scanner input = new Scanner(fileName);
         List<String> list = new ArrayList<String>();
         while (input.hasNextLine()){
@@ -50,7 +50,7 @@ public class Player {
      * @throws FileNotFoundException
      */
     public void fire() throws FileNotFoundException {
-        File fileName = new File("CommandDesignPattern/fire.txt");
+        File fileName = new File("fire.txt");
         Scanner input = new Scanner(fileName);
         List<String> list = new ArrayList<String>();
 
@@ -76,7 +76,7 @@ public class Player {
      * @throws FileNotFoundException
      */
     public void runForward() throws FileNotFoundException {
-        File fileName = new File("CommandDesignPattern/run.txt");
+        File fileName = new File("run.txt");
         Scanner input = new Scanner(fileName);
         List<String> list = new ArrayList<String>();
         while (input.hasNextLine()){
