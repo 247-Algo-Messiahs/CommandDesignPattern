@@ -5,12 +5,23 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Reads in run, jump, and fire txt files and prints actions to the terminal
+ * @author Peyton Tucker, Austin Hanson, Nicolas Becker
+ */
 public class Player {
 
+    /**
+     * Prints "Our hero is born" upon creation of Player object
+     */
     public Player() {
         System.out.println("Our hero is born");
     }
 
+    /**
+     * Reads in jump.txt file and prints out to terminal
+     * @throws FileNotFoundException
+     */
     public void jump() throws FileNotFoundException {
         File fileName = new File("CommandDesignPattern/jump.txt");
         Scanner input = new Scanner(fileName);
@@ -34,6 +45,10 @@ public class Player {
         }
     }
 
+    /**
+     * Reads in fire.txt file and prints out to terminal
+     * @throws FileNotFoundException
+     */
     public void fire() throws FileNotFoundException {
         File fileName = new File("CommandDesignPattern/fire.txt");
         Scanner input = new Scanner(fileName);
@@ -56,6 +71,10 @@ public class Player {
 
     }
 
+    /**
+     * Reads in run.txt file and prints out to terminal
+     * @throws FileNotFoundException
+     */
     public void runForward() throws FileNotFoundException {
         File fileName = new File("CommandDesignPattern/run.txt");
         Scanner input = new Scanner(fileName);
@@ -76,6 +95,9 @@ public class Player {
         }
     }
 
+    /**
+     * Runs a counter to sleep actions by 100 for terminal outputs
+     */
     private void sleep() {
         try {
             TimeUnit.MILLISECONDS.sleep(100);
@@ -84,6 +106,9 @@ public class Player {
         }
     }
     
+    /**
+     * Clears the terminal of any text
+     */
     private void clear() {
         System.out.print("\033[H\033[2J");
     }
